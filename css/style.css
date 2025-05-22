@@ -553,7 +553,7 @@ footer img{
   }
 
   .titulo-destacados {
-    padding-right: 30px;
+    display: none
   }
 
   .coleccion-grid {
