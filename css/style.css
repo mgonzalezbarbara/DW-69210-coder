@@ -449,6 +449,12 @@ footer img{
      * {
     box-sizing: border-box;
   }
+
+   html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+ }
     header {
     padding: 10px 30px;
     flex-direction: column;
@@ -516,7 +522,13 @@ footer img{
     width: 100%;
   }
 
-
+  .preguntas-frecuentes {
+    display: none;
+  }
+  .preguntas {
+    display: none;
+  }
+  
   .presentacion {
     background-image: url('../medios/banner.1.WEBP'); 
     background-size: cover;
@@ -541,7 +553,7 @@ footer img{
   }
 
   .titulo-destacados {
-    padding-right: 50px
+    padding-right: 30px;
   }
 
   .coleccion-grid {
@@ -593,6 +605,75 @@ footer img{
     display: none;
   }
 
+   .maps {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .maps h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    word-break: normal;
+    white-space: normal;
+  }
+
+  .maps iframe {
+    width: 100%;
+    height: 250px;
+    border: none;
+  }
+
+  .contacto {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .contacto h3 {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  form {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 10px;
+  }
+
+  form div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  form input,
+  form select,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  input[type="submit"],
+  input[type="reset"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    background: transparent;
+    border: 1px solid #000;
+  }
+
+  .formulario {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+  }
+
     footer {
     padding: 25px;
   }
@@ -615,76 +696,6 @@ footer img{
     justify-content: flex-start;
     padding-left: 10px;
   }
-
-  * {
-    box-sizing: border-box;
-  }
-
- .maps,
-  .contacto {
-    width: 100%;
-    padding: 20px 15px;
-    text-align: center;
-  }
-
-  .maps h2 {
-    text-align: center;
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    white-space: normal;
-    word-wrap: break-word;
-  }
-
-  .maps iframe {
-    width: 100%;
-    height: 250px;
-    border: 0;
-  }
-
-  .contacto h3 {
-    text-align: center;
-    font-size: 1.3rem;
-    margin-bottom: 15px;
-  }
-
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
-  }
-
-  form div {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-  }
-
-  form input,
-  form select,
-  form textarea {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-  }
-
-  input[type="submit"],
-  input[type="reset"] {
-    padding: 12px;
-    font-size: 16px;
-    background-color: #eee;
-    border: 1px solid #ccc;
-  }
-
-  .preguntas-frecuentes {
-    display: none;
-  }
-  .preguntas {
-    display: none;
-  }
-
 }
 
 
@@ -788,32 +799,5 @@ footer img{
     padding-left: 10px;
   }
 }
-
-
-
-
-/*Media
-
-@media screen (max-width: 480px) {
-  .coleccion-grid {
-    grid-template-areas:
-      "texto"
-      "imagen"
-      "prod1"
-      "prod2"
-      "prod3"
-      "prod4";
-    grid-template-columns: 1fr;
-    gap: 30px 0;
-    padding: 40px 20px;
-  }
-
-@media (max-width:480px){
-    
-}
-
-@media (min-width:481) and (max-width:700px){
-
-}*/
 
 
