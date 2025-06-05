@@ -1,0 +1,250 @@
+
+@use "./variables" as*;
+/*Media */
+
+@media only screen and (max-width: 480px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  main {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+ //Header
+  header {
+    padding: 10px 30px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .menu {
+    nav {
+      ul {
+        flex-direction: row;
+        align-items: center;
+
+        li {
+          margin-left: 10px
+        }
+      }
+    }
+  }
+
+ //index
+  .presentacion {
+    background-image: url('../medios/banner.1.WEBP');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+
+    h3,
+    button {
+      max-width: 90%;
+      z-index: 2;
+    }
+  }
+
+  
+  .destacados {
+    padding: 20px 0;
+    background-color: #fff ;
+  }
+
+
+  .coleccion-grid {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    color: $marron;
+
+    .texto,
+    .imagen-principal {
+      display: none;
+    }
+
+    .producto, .prod1, .prod2, .prod3, .prod4 {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      max-width: 400px;
+      margin-bottom: 20px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 10px;
+      box-sizing: border-box;
+
+
+
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 10px;
+      }
+
+      .descripcion {
+        text-align: left;
+        padding: 5px 0;
+        color: black;
+        min-height: 40px;
+        width: 100%;
+        word-break: break-word;
+      }
+
+      .precio {
+        text-align: left;
+        font-weight: bold;
+        padding: 5px 0;
+        width: 100%;
+        color: black;
+      }
+    }
+  }
+
+ //Jinete y Otras paginas
+  .banner-jinete {
+    height: 180px;
+    background-position: center;
+  }
+
+  .titulo-jinete,
+  .subtitulo {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .productos-flex {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 0;
+  }
+
+
+ //Contacto
+ //Mapa
+  .maps {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+
+    h2 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      word-break: normal;
+      white-space: normal;
+    }
+
+    iframe {
+      width: 100%;
+      height: 250px;
+      border: none;
+    }
+  }
+
+  .contacto {
+    width: 100%;
+    padding: 20px 0;
+
+    h3 {
+      text-align: center;
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+  }
+
+ //Otros
+  .preguntas-frecuentes,
+  .preguntas,
+  .sobre-nosotros,
+  .titulo-destacados,
+  .coleccion-grid .imagen-principal,
+  .coleccion-grid .texto p,
+  .presentacion .intro {
+    display: none;
+  }
+
+ //Footer
+  footer {
+    padding: 25px;
+
+    .foot {
+      justify-content: flex-start;
+    }
+
+    .footer-column:not(:nth-child(3)) {
+      display: none;
+
+      &:nth-child(3) {
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+      }
+    }
+
+    .footer-images {
+      justify-content: flex-start;
+      padding-left: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .formulario {
+    padding: 20px; // Le damos padding normal en mobile
+    width: 100%;
+    box-sizing: border-box;
+
+    form {
+      width: 100%;
+      padding: 0;
+      gap: 12px;
+
+      input,
+      select,
+      textarea {
+        font-size: 1rem;
+        padding: 10px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      input[type="submit"],
+      input[type="reset"] {
+        width: 100%;
+        padding: 12px;
+        font-size: 1rem;
+        border: 1px solid #000;
+        background-color: $marron;
+      }
+    }
+  }
+}
+
+
+
+
+

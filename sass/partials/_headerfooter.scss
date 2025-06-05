@@ -1,0 +1,104 @@
+
+@use "./variables" as*;
+/* Header*/
+
+header{
+    background-color:white;
+    position: sticky;
+    font-family: $font;
+    padding: 0 50px;
+    border-bottom: 1px solid $marron;
+    top: 0;
+
+    a{
+     color: $marron;
+     text-decoration: none;
+    }
+
+    ul{
+     list-style: none;
+     display: flex;
+     justify-content: space-evenly;
+    }
+
+    .logo{
+     font-size: 24px;
+     font-weight: bold;
+     display: flex;
+     align-items: center;
+    }
+
+    .menu{
+     a{
+       color: $marron;
+       height: 40px;
+       width: 100%;
+     }
+    }
+
+    nav{
+     padding-top: 10px;
+     margin-top: 10px;
+     a{
+      text-decoration: none;
+      font-family:$font;
+      list-style: none;
+     }
+    }
+}
+
+/*Footer*/
+
+footer {
+     background-color:  black; 
+     padding: 30px 20px;
+     font-family: $font;
+
+    .foot {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+      text-align: center;
+      .footer-column {
+        flex: 1;
+        min-width: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p {
+          font-size: 1.2em;
+          font-weight: 600;
+          text-align: center;
+        }
+      }
+      .footer-images {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+        width: 100%;
+        max-width: 200px;
+        img {
+         width: 40px;
+         height: 40px;
+         object-fit: contain;
+        }
+      }
+
+    }
+
+    div{
+     color: rgb(220, 214, 183);
+     padding: 20px 0;
+     display: flex;
+     justify-content: center;
+    }
+
+    img{
+     width: 5%;
+    }
+
+}
+
+

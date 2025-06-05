@@ -1,0 +1,44 @@
+
+@use "./variables" as*;
+/* Font */ 
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+/*font-family: "Merriweather", serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap');
+/* font-family: 'Oswald', sans-serif; */
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;  
+}
+
+/* Body */
+
+body{
+    background-color: rgb(246, 248, 249);
+    main{
+     color: $marron;
+     background-color:rgb(246, 248, 249);
+     font-family: $font;
+     img{
+      width: 40%;
+     }
+    }
+}
+
+.paginas{
+    height: 450px;
+}
+
+h1{
+    text-align: center;
+    padding: 30px 0;
+}
+
+h2{
+   text-align: center; 
+}
+
+
+

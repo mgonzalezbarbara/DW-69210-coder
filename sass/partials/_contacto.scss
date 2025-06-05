@@ -1,0 +1,53 @@
+@use "./variables" as*;
+
+/*Contacto*/
+
+.maps{
+    padding: 30px 200px;
+    text-align: center;
+    iframe{
+      align-items: center;
+    }
+}
+
+.formulario {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 30px 200px ;
+   form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    input[type="text"],
+    input[type="password"],
+    input[type="number"],
+    select,
+    textarea {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    input[type="submit"],
+    input[type="reset"] {
+        width: 150px;
+        padding: 10px;
+        background-color: #8b4513;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        &:hover {
+          background-color: #a0522d;
+        }
+    } 
+   }
+}
+
+.preguntas {
+  margin-top: 40px;
+  padding: 30px 200px; 
+}
+

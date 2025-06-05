@@ -1,0 +1,22 @@
+@use "./variables" as*;
+
+/*Caballo*/
+
+.banner-caballo{
+    background-image: url(../medios/banner.caballo.JPG);
+    height: 200px;
+    background-size: cover;
+}
+
+.titulo-caballo{
+    text-align: center;
+    margin-top: 30px;
+}
+.subtitulo{
+    text-align: center;
+    padding: 0 0 30px 0;
+}
+
+.productos-flex {
+  @include productos-flex;
+}
